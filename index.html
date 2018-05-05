@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面試</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+            <div class="nav-btn close" onclick="toggle(this)">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="thrid"></div>
+            </div>
+        </div>
+
+        <div class="nav-select">
+            <a href="#" class="nav-btn">
+                <div class="num">01</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+            <a href="#" class="nav-btn">
+                <div class="num">02</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+            <a href="#" class="nav-btn">
+                <div class="num">03</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+            <a href="#" class="nav-btn">
+                <div class="num">04</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+            <a href="#" class="nav-btn">
+                <div class="num">05</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+            <a href="#" class="nav-btn">
+                <div class="num">TEST</div>
+                <div class="word">文字文字</div>
+                <div class="down">↓</div>
+            </a>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div class="logo_img"></div>
+        <div class="image_word">
+            <div class="image">
+                <div class="word">
+                    <div class="btn">文字文字</div>
+                    文字文字 文字文字
+                </div>
+                <img src="image/1.JPG" alt="">
+            </div>
+            <div class="image">
+                <div class="word">
+                    <div class="btn">文字文字</div>
+                    文字文字 文字文字
+                </div>
+                <img src="image/2.JPG" alt="">
+            </div>
+            <div class="image">
+                <div class="word">
+                    <div class="btn">文字文字</div>
+                    文字文字 文字文字
+                </div>
+                <img src="image/3.JPG" alt="">
+            </div>
+            <div class="image">
+                <div class="word">
+                    <div class="btn">文字文字</div>
+                    文字文字 文字文字
+                </div>
+                <img src="image/4.JPG" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".nav-btn").click(function () {
+                $(".nav-select").toggle(500);
+            });
+        });
+
+        function toggle(menu) {
+            menu.classList.toggle("close");
+            menu.classList.toggle("open");
+        }
+    </script>
+
+</body>
+
+</html>
